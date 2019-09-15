@@ -172,6 +172,9 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/%/libfuse-lite.so \
     system/%/libntfs-3g.so
 
+# Fonts
+include vendor/lineage/config/fonts.mk
+
 # FRP
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/bin/wipe-frp.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/wipe-frp
@@ -269,3 +272,4 @@ include vendor/lineage/config/version.mk
 # GMS setup
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.com.google.clientidbase=android-google
 $(call inherit-product, vendor/gms/setup-gms.mk)
+
