@@ -288,4 +288,4 @@ include vendor/lineage/config/version.mk
 # GMS setup
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.com.google.clientidbase=android-google
 $(call inherit-product, vendor/gms/setup-gms.mk)
-
+-include vendor/certification/config.mk
